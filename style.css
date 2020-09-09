@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+.cloudy {
+    background-image: url('./images/cloudy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sunny {
+    background-image: url('./images/sunny.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rainy {
+    background-image: url('./images/rainy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature {
+    width: 150px;
+    border: 1px solid black;
+    margin: 100px 0;
+}
+
+.temperature p {
+    font-size: 50px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .temperature p {
+        color: red;
+    }
+}
